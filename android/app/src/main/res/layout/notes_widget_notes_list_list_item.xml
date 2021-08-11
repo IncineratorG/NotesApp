@@ -1,0 +1,34 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:id="@+id/notesListItemLayout">
+
+    <TextView
+        android:id="@+id/noteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/itemImageViewLayout"
+        android:maxLines="2"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/itemImageViewLayout"
+        android:layout_marginEnd="5dp" />
+
+    <LinearLayout
+        android:id="@+id/itemImageViewLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <!--        android:singleLine="true"-->

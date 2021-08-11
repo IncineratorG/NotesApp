@@ -1,0 +1,79 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:id="@+id/noteAsListItemLayout">
+
+    <TextView
+        android:id="@+id/noteItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/checkboxImage"
+        android:layout_toRightOf="@+id/checkboxImage"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/checkbox_checked_final_dark"
+        android:id="@+id/checkboxImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true" />
+
+</RelativeLayout>
+
+
+    <!--<RelativeLayout android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:paddingLeft="10dp"-->
+<!--    android:paddingRight="10dp"-->
+<!--    android:paddingTop="5dp"-->
+<!--    android:paddingBottom="5dp"-->
+<!--    android:id="@+id/noteAsListItemLayout">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/noteItemText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_toLeftOf="@+id/itemImageViewLayout"-->
+<!--        android:text="Test text"-->
+<!--        android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_toStartOf="@+id/itemImageViewLayout"-->
+<!--        android:layout_marginEnd="5dp" />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/itemImageViewLayout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            app:srcCompat="@drawable/checkbox_checked"-->
+<!--            android:id="@+id/checkboxImage"-->
+<!--            android:clickable="true" />-->
+
+<!--    </LinearLayout>-->
+
+<!--</RelativeLayout>-->

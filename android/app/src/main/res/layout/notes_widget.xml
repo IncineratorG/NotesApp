@@ -1,0 +1,112 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_style">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/widget_header_style">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/app_icon"
+            android:id="@+id/headerImage"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:ellipsize="end"
+            android:textColor="#ffffff"
+            android:singleLine="true" />
+    </LinearLayout>
+    <ListView
+        android:layout_margin="0dp"
+        android:id="@+id/widgetListView"
+        android:scrollbars="none"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00000000"
+        android:dividerHeight="1.0sp"
+        android:listSelector="@android:color/transparent"
+        android:background="#00ffffff"
+        android:layout_below="@+id/header">
+    </ListView>
+</RelativeLayout>
+
+<!--<RelativeLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@drawable/widget_style">-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/header"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:background="@drawable/widget_header_style">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            app:srcCompat="@drawable/app_icon"-->
+<!--            android:id="@+id/headerImage"-->
+<!--            android:clickable="true" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/headerTitle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="center"-->
+<!--            android:text=""-->
+<!--            android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--            android:ellipsize="end"-->
+<!--            android:singleLine="true"-->
+<!--            android:textColor="#8E8888" />
+<!-    </LinearLayout>-->
+<!--    <ListView-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:id="@+id/widgetListView"-->
+<!--        android:scrollbars="none"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/header">-->
+<!--    </ListView>-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/noteAsTextLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:background="@android:color/white"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_below="@+id/header">-->
+<!--        <TextView-->
+<!--            android:id="@+id/noteText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text=""-->
+<!--            android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--            android:ellipsize="end"-->
+<!--            android:singleLine="false"-->
+<!--            android:textColor="#8E8888" />-->
+<!--    </LinearLayout>-->
+<!--</RelativeLayout>-->
